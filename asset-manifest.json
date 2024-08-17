@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/apexdle/static/css/main.7801308a.css",
-    "main.js": "/apexdle/static/js/main.fdde0424.js",
-    "static/js/453.2b4f95eb.chunk.js": "/apexdle/static/js/453.2b4f95eb.chunk.js",
+    "main.css": "/apexdle/static/css/main.464b1dd8.css",
+    "main.js": "/apexdle/static/js/main.1b64debb.js",
+    "static/media/Apex-Black.ttf": "/apexdle/static/media/Apex-Black.f68e93d9989d8b4c8815.ttf",
+    "static/media/Apex-Medium.ttf": "/apexdle/static/media/Apex-Medium.9eabf3bad65c2e0d19d7.ttf",
     "index.html": "/apexdle/index.html",
-    "main.7801308a.css.map": "/apexdle/static/css/main.7801308a.css.map",
-    "main.fdde0424.js.map": "/apexdle/static/js/main.fdde0424.js.map",
-    "453.2b4f95eb.chunk.js.map": "/apexdle/static/js/453.2b4f95eb.chunk.js.map"
+    "main.464b1dd8.css.map": "/apexdle/static/css/main.464b1dd8.css.map",
+    "main.1b64debb.js.map": "/apexdle/static/js/main.1b64debb.js.map"
   },
   "entrypoints": [
-    "static/css/main.7801308a.css",
-    "static/js/main.fdde0424.js"
+    "static/css/main.464b1dd8.css",
+    "static/js/main.1b64debb.js"
   ]
 }

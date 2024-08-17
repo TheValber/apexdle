@@ -1,0 +1,56 @@
+.App {
+  text-align: center;
+  height: 100%;
+}
+
+.App-header {
+  background-color: #A13439;
+  height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 4dvh;
+  font-family: 'Apex Black';
+  color: white;
+}
+
+.App-body {
+  background-color: #E9E1DC;
+  min-height: 600px;
+  display: flex;
+  justify-content: center;
+}
+
+.App-footer {
+  background-color: #2E2526;
+  height: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1em;
+  font-family: 'Apex Medium';
+  color: white;
+}
+
+/*
+
+Palette:
+
+blanc :
+#E9E1DC
+
+rouge :
+#A13439
+
+gris :
+#615755
+
+noir :
+#2E2526
+
+beige :
+#9F8F82
+
+*/

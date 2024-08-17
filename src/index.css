@@ -7,7 +7,12 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+@font-face {
+  font-family: 'Apex Black';
+  src: url('./fonts/Apex-Black.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'Apex Medium';
+  src: url('./fonts/Apex-Medium.ttf') format('truetype');
 }

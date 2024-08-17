@@ -1,0 +1,16 @@
+{
+  "files": {
+    "main.css": "/apexdle/static/css/main.f855e6bc.css",
+    "main.js": "/apexdle/static/js/main.bc3418f0.js",
+    "static/js/453.2b4f95eb.chunk.js": "/apexdle/static/js/453.2b4f95eb.chunk.js",
+    "static/media/logo.svg": "/apexdle/static/media/logo.6ce24c58023cc2f8fd88fe9d219db6c6.svg",
+    "index.html": "/apexdle/index.html",
+    "main.f855e6bc.css.map": "/apexdle/static/css/main.f855e6bc.css.map",
+    "main.bc3418f0.js.map": "/apexdle/static/js/main.bc3418f0.js.map",
+    "453.2b4f95eb.chunk.js.map": "/apexdle/static/js/453.2b4f95eb.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.f855e6bc.css",
+    "static/js/main.bc3418f0.js"
+  ]
+}

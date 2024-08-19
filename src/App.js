@@ -9,9 +9,9 @@ function App() {
       <header className="App-header">
         <h1>Apexdle</h1>
       </header>
-      <body className='App-body'>
+      <div className='App-body'>
         <ClassicPage />
-      </body>
+      </div>
       <footer className="App-footer">
         <p>Apexdle - Made by Valber</p>
       </footer>

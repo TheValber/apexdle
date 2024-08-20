@@ -71,9 +71,8 @@ function ClassicGame() {
 
   return (
     <div className="Classic-game">
-      <p><i>(debug) Today's character : {guessedLegend.legend}</i></p>
       <LegendsBar onLegendSubmit={legendSubmit} />
-      <ClassicGrid legendsGrid={legendsGrid} />
+      {legendsGrid.length > 0 && <ClassicGrid legendsGrid={legendsGrid} />}
     </div>
   );
 }

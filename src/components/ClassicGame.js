@@ -2,10 +2,12 @@ import React, { useState } from "react";
 import ClassicGrid from "./ClassicGrid";
 import LegendsBar from "./LegendsBar";
 import { legends } from "../data/Legends";
+import "../styles/ClassicGame.css";
 
 function ClassicGame() {
   const [legendsGrid, setLegendsGrid] = useState([]);
   const guessedLegend = getRandomLegend();
+  const [hasWon, setHasWon] = useState(false);
 
   function seededShuffle(baseArray, seed) {
     let array = baseArray.slice();
@@ -42,6 +44,9 @@ function ClassicGame() {
 
   const legendSubmit = (legend) => {
     const submittedLegend = legends.find((l) => l.legend === legend);
+    if (submittedLegend.legend === guessedLegend.legend) {
+      setHasWon(true);
+    }
     const newLegend = {
       legend: legend,
       class: {
@@ -71,7 +76,8 @@ function ClassicGame() {
 
   return (
     <div className="Classic-game">
-      <LegendsBar onLegendSubmit={legendSubmit} />
+      {!hasWon && <LegendsBar onLegendSubmit={legendSubmit} />}
+      {hasWon && <div className="win">You won!</div>}
       {legendsGrid.length > 0 && <ClassicGrid legendsGrid={legendsGrid} />}
     </div>
   );

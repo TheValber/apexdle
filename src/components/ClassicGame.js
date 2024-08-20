@@ -5,6 +5,7 @@ import { legends } from "../data/Legends";
 
 function ClassicGame() {
   const [legendsGrid, setLegendsGrid] = useState([]);
+  const guessedLegend = getRandomLegend();
 
   function seededShuffle(baseArray, seed) {
     let array = baseArray.slice();
@@ -40,13 +41,37 @@ function ClassicGame() {
   }
 
   const legendSubmit = (legend) => {
-    const newLegendsGrid = [...legendsGrid, legend];
+    const submittedLegend = legends.find((l) => l.legend === legend);
+    const newLegend = {
+      legend: legend,
+      class: {
+        value: submittedLegend.class,
+        state: submittedLegend.class === guessedLegend.class ? "success" : "error"
+      },
+      release: {
+        value: submittedLegend.release,
+        state: submittedLegend.release === guessedLegend.release ? "success" : "error"
+      },
+      gender: {
+        value: submittedLegend.gender,
+        state: submittedLegend.gender === guessedLegend.gender ? "success" : "error"
+      },
+      age: {
+        value: submittedLegend.age,
+        state: submittedLegend.age === guessedLegend.age ? "success" : "error"
+      },
+      homeworld: {
+        value: submittedLegend.homeworld,
+        state: submittedLegend.homeworld === guessedLegend.homeworld ? "success" : "error"
+      }
+    };
+    const newLegendsGrid = [...legendsGrid, newLegend];
     setLegendsGrid(newLegendsGrid);
   };
 
   return (
     <div className="Classic-game">
-      <p><i>(debug) Today's character : {getRandomLegend()}</i></p>
+      <p><i>(debug) Today's character : {guessedLegend.legend}</i></p>
       <LegendsBar onLegendSubmit={legendSubmit} />
       <ClassicGrid legendsGrid={legendsGrid} />
     </div>

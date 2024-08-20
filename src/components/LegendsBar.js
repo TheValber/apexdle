@@ -9,8 +9,11 @@ function LegendsBar({ onLegendSubmit }) {
 
   const formatName = (name) => {
     if (!name) return '';
-    return name.charAt(0).toUpperCase() + name.slice(1).toLowerCase();
-  };
+    return name
+        .split(' ')
+        .map(word => word.charAt(0).toUpperCase() + word.slice(1).toLowerCase())
+        .join(' ');
+};
 
   const handleInputChange = (e) => {
     const value = e.target.value;
@@ -42,7 +45,7 @@ function LegendsBar({ onLegendSubmit }) {
 
   const handleSubmit = (e, submittedValue='') => {
     e && e.preventDefault();
-    const value = formatName((submittedValue || inputValue).trim());
+    let value = formatName((submittedValue || inputValue).trim());
     if (!legends.includes(value)) {
       return;
     }

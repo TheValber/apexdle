@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/apexdle/static/css/main.35699485.css",
-    "main.js": "/apexdle/static/js/main.04183862.js",
+    "main.css": "/apexdle/static/css/main.a298beb1.css",
+    "main.js": "/apexdle/static/js/main.070a385c.js",
     "static/media/Apex-Black.ttf": "/apexdle/static/media/Apex-Black.f68e93d9989d8b4c8815.ttf",
     "static/media/Apex-Medium.ttf": "/apexdle/static/media/Apex-Medium.9eabf3bad65c2e0d19d7.ttf",
     "index.html": "/apexdle/index.html",
-    "main.35699485.css.map": "/apexdle/static/css/main.35699485.css.map",
-    "main.04183862.js.map": "/apexdle/static/js/main.04183862.js.map"
+    "main.a298beb1.css.map": "/apexdle/static/css/main.a298beb1.css.map",
+    "main.070a385c.js.map": "/apexdle/static/js/main.070a385c.js.map"
   },
   "entrypoints": [
-    "static/css/main.35699485.css",
-    "static/js/main.04183862.js"
+    "static/css/main.a298beb1.css",
+    "static/js/main.070a385c.js"
   ]
 }

@@ -1,8 +1,24 @@
 import '../styles/ClassicGrid.css';
 
-function ClassicGrid() {
+function ClassicGrid({legendsGrid}) {
+  const legends = [...legendsGrid].reverse();
+
   return (
     <div className="Classic-grid">
+      <table>
+        <thead>
+          <tr>
+            <th>Legend</th>
+          </tr>
+        </thead>
+        <tbody>
+          {legends.map((legend, index) => (
+            <tr key={index}>
+              <td>{legend}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
       <table>
         <thead>
           <tr>

@@ -1,37 +1,13 @@
+import React, { useState } from "react";
 import ClassicGrid from "./ClassicGrid";
 import LegendsBar from "./LegendsBar";
+import { legends } from "../data/Legends";
 
 function ClassicGame() {
-  const legends = [
-    "Bloodhound",
-    "Gibraltar",
-    "Lifeline",
-    "Pathfinder",
-    "Wraith",
-    "Bangalore",
-    "Caustic",
-    "Mirage",
-    "Octane",
-    "Wattson",
-    "Crypto",
-    "Revenant",
-    "Loba",
-    "Rampart",
-    "Horizon",
-    "Fuse",
-    "Valkyrie",
-    "Seer",
-    "Ash",
-    "Mad Maggie",
-    "Newcastle",
-    "Vantage",
-    "Catalyst",
-    "Ballistic",
-    "Conduit",
-    "Alter"
-  ];
+  const [legendsGrid, setLegendsGrid] = useState([]);
 
-  function seededShuffle(array, seed) {
+  function seededShuffle(baseArray, seed) {
+    let array = baseArray.slice();
     let currentIndex = array.length, temporaryValue, randomIndex;
   
     function random() {
@@ -63,11 +39,16 @@ function ClassicGame() {
     return shuffledLegends[index];
   }
 
+  const legendSubmit = (legend) => {
+    const newLegendsGrid = [...legendsGrid, legend];
+    setLegendsGrid(newLegendsGrid);
+  };
+
   return (
     <div className="Classic-game">
       <p><i>(debug) Today's character : {getRandomLegend()}</i></p>
-      <LegendsBar />
-      <ClassicGrid />
+      <LegendsBar onLegendSubmit={legendSubmit} />
+      <ClassicGrid legendsGrid={legendsGrid} />
     </div>
   );
 }

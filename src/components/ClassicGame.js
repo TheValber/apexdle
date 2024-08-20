@@ -50,7 +50,7 @@ function ClassicGame() {
       },
       release: {
         value: submittedLegend.release,
-        state: submittedLegend.release === guessedLegend.release ? "success" : "error"
+        state: submittedLegend.release === guessedLegend.release ? "success" : (submittedLegend.release > guessedLegend.release ? "too-big" : "too-small")
       },
       gender: {
         value: submittedLegend.gender,
@@ -58,7 +58,7 @@ function ClassicGame() {
       },
       age: {
         value: submittedLegend.age,
-        state: submittedLegend.age === guessedLegend.age ? "success" : "error"
+        state: submittedLegend.age === guessedLegend.age ? "success" : (submittedLegend.age > guessedLegend.age ? "too-big" : "too-small")
       },
       homeworld: {
         value: submittedLegend.homeworld,

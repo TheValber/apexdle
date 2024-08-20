@@ -26,6 +26,22 @@ td.error {
   background-color: #bf0000;
 }
 
+td.too-big {
+  background-color: #bf0000;
+  background-image: url('../assets/down_red_arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+td.too-small {
+  background-color: #bf0000;
+  background-image: url('../assets/up_red_arrow.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
 table {
   border-collapse: separate;
   border-spacing: 15px;

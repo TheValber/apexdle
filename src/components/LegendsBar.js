@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { legendsNames } from '../data/Legends';
 import '../styles/LegendsBar.css';
+import { legendsFaces } from '../data/Face';
 
 function LegendsBar({ onLegendSubmit }) {
   const [inputValue, setInputValue] = useState('');
@@ -78,6 +79,7 @@ function LegendsBar({ onLegendSubmit }) {
         <ul className="suggestions-list">
             {suggestions.map((suggestion, index) => (
             <li key={index} onClick={() => handleSuggestionClick(suggestion)}>
+                <div className='face' style={{ backgroundImage: `url(${legendsFaces[suggestion]})`}}></div>
                 {suggestion}
             </li>
             ))}

@@ -1,4 +1,5 @@
 import '../styles/ClassicGrid.css';
+import { legendsFaces } from '../data/Face';
 
 function ClassicGrid({legendsGrid}) {
   const legends = [...legendsGrid].reverse();
@@ -20,7 +21,7 @@ function ClassicGrid({legendsGrid}) {
         <tbody>
           {legends.map((legend, index) => (
             <tr key={index}>
-              <td><img src={"../assets/legends/" + legend.legend + ".png"} /></td>
+              <td className='face' style={{ backgroundImage: `url(${legendsFaces[legend.legend]})`}}></td>
               <td>{legend.legend}</td>
               <td className={legend.class.state}>{legend.class.value}</td>
               <td className={legend.release.state}>{legend.release.value}</td>

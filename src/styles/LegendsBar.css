@@ -59,6 +59,15 @@
   background-color: #9F8F82;
 }
 
+div.face {
+  position: absolute;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 25px;
+  height: 25px;
+}
+
 @media screen and (max-width: 700px) {
   #character-guess {
     border-radius: 25px;

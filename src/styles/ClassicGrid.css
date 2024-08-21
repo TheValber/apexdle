@@ -62,3 +62,10 @@ table {
 th, td {
   padding: 15px;
 }
+
+td.face {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 20px;
+}

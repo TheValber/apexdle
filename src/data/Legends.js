@@ -53,5 +53,5 @@ export const legends = [
     { legend: "Catalyst", class: "Controller", release: 2022, gender: "Female", age: 30, homeworld: "Boreas" },
     { legend: "Ballistic", class: "Assault", release: 2023, gender: "Male", age: 63, homeworld: "Gaea" },
     { legend: "Conduit", class: "Support", release: 2023, gender: "Female", age: 27, homeworld: "Nexus" },
-    { legend: "Alter", class: "Skirmisher", release: 2024, gender: "Female", age: 0, homeworld: "Unknown" }
+    { legend: "Alter", class: "Skirmisher", release: 2024, gender: "Female", age: -1, homeworld: "Unknown" }
 ];

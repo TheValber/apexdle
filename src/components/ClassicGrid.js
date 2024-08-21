@@ -8,6 +8,7 @@ function ClassicGrid({legendsGrid}) {
       <table>
         <thead>
           <tr>
+            <th></th>
             <th>Legend</th>
             <th>Class</th>
             <th>Release</th>
@@ -19,6 +20,7 @@ function ClassicGrid({legendsGrid}) {
         <tbody>
           {legends.map((legend, index) => (
             <tr key={index}>
+              <td><img src={"../assets/legends/" + legend.legend + ".png"} /></td>
               <td>{legend.legend}</td>
               <td className={legend.class.state}>{legend.class.value}</td>
               <td className={legend.release.state}>{legend.release.value}</td>

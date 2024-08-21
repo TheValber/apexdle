@@ -1,15 +1,41 @@
 {
   "files": {
-    "main.css": "/apexdle/static/css/main.f1b06494.css",
-    "main.js": "/apexdle/static/js/main.ba0f7e44.js",
+    "main.css": "/apexdle/static/css/main.35c63760.css",
+    "main.js": "/apexdle/static/js/main.1edd0e22.js",
     "static/media/Apex-Black.ttf": "/apexdle/static/media/Apex-Black.f68e93d9989d8b4c8815.ttf",
     "static/media/Apex-Medium.ttf": "/apexdle/static/media/Apex-Medium.9eabf3bad65c2e0d19d7.ttf",
+    "static/media/Bloodhound.png": "/apexdle/static/media/Bloodhound.910493b9b2d4f6209120.png",
+    "static/media/Vantage.png": "/apexdle/static/media/Vantage.98b8ffff4a5b167bcbc0.png",
+    "static/media/Octane.png": "/apexdle/static/media/Octane.7d655cb504c3b3fb05e0.png",
+    "static/media/Caustic.png": "/apexdle/static/media/Caustic.eeb56223825c4bb0bae1.png",
+    "static/media/Pathfinder.png": "/apexdle/static/media/Pathfinder.b40e5c485b0cb40a42d4.png",
+    "static/media/Alter.png": "/apexdle/static/media/Alter.ec03d831ff85ce6ccd2c.png",
+    "static/media/Mirage.png": "/apexdle/static/media/Mirage.0d939ceb21caa307a401.png",
+    "static/media/Catalyst.png": "/apexdle/static/media/Catalyst.5a574f9ca0bb373a0a31.png",
+    "static/media/Horizon.png": "/apexdle/static/media/Horizon.6b07d60ce6c47b846f8e.png",
+    "static/media/Gibraltar.png": "/apexdle/static/media/Gibraltar.6c6dfa69474b77fff99a.png",
+    "static/media/Wattson.png": "/apexdle/static/media/Wattson.06e6f9c1d4b3cc2fbd8c.png",
+    "static/media/Valkyrie.png": "/apexdle/static/media/Valkyrie.8a7a99630ae3af350f53.png",
+    "static/media/Newcastle.png": "/apexdle/static/media/Newcastle.b000203191a9584b0198.png",
+    "static/media/Crypto.png": "/apexdle/static/media/Crypto.800468a025b37a3c515b.png",
+    "static/media/Wraith.png": "/apexdle/static/media/Wraith.a76395a5cdf155266fc5.png",
+    "static/media/Loba.png": "/apexdle/static/media/Loba.9c8c4dc3f453f07261df.png",
+    "static/media/Ballistic.png": "/apexdle/static/media/Ballistic.7fe1ef2db34695b4fe98.png",
+    "static/media/Rampart.png": "/apexdle/static/media/Rampart.53c30128d1d482056080.png",
+    "static/media/Mad-Maggie.png": "/apexdle/static/media/Mad-Maggie.46747e0a01abe2eb30b7.png",
+    "static/media/Lifeline.png": "/apexdle/static/media/Lifeline.308e2dd9f93da3b7f0c7.png",
+    "static/media/Conduit.png": "/apexdle/static/media/Conduit.4759351e6befeb5c515d.png",
+    "static/media/Revenant.png": "/apexdle/static/media/Revenant.b676de22c5eae0e5fe50.png",
+    "static/media/Bangalore.png": "/apexdle/static/media/Bangalore.47c753633e814d071546.png",
+    "static/media/Ash.png": "/apexdle/static/media/Ash.e45460bf7b3840e95bce.png",
+    "static/media/Fuse.png": "/apexdle/static/media/Fuse.95577b9e2e6381a867d5.png",
+    "static/media/Seer.png": "/apexdle/static/media/Seer.c326cade1320ccf7ed6f.png",
     "index.html": "/apexdle/index.html",
-    "main.f1b06494.css.map": "/apexdle/static/css/main.f1b06494.css.map",
-    "main.ba0f7e44.js.map": "/apexdle/static/js/main.ba0f7e44.js.map"
+    "main.35c63760.css.map": "/apexdle/static/css/main.35c63760.css.map",
+    "main.1edd0e22.js.map": "/apexdle/static/js/main.1edd0e22.js.map"
   },
   "entrypoints": [
-    "static/css/main.f1b06494.css",
-    "static/js/main.ba0f7e44.js"
+    "static/css/main.35c63760.css",
+    "static/js/main.1edd0e22.js"
   ]
 }

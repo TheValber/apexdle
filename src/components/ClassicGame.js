@@ -3,10 +3,12 @@ import ClassicGrid from "./ClassicGrid";
 import LegendsBar from "./LegendsBar";
 import { legends } from "../data/Legends";
 import "../styles/ClassicGame.css";
+import Countdown from "./Countdown";
 
 function ClassicGame() {
   const [legendsGrid, setLegendsGrid] = useState([]);
   const guessedLegend = getRandomLegend();
+  const yesterdayLegend = getRandomLegend(true);
   const [hasWon, setHasWon] = useState(false);
 
   function seededShuffle(baseArray, seed) {
@@ -30,8 +32,11 @@ function ClassicGame() {
     return array;
   }
 
-  function getRandomLegend() {
-    const fullDate = new Date();
+  function getRandomLegend(yesterday = false) {
+    let fullDate  = new Date();
+    if (yesterday) {
+      fullDate.setDate(fullDate.getDate() - 1);
+    }
     const date = fullDate.getTime();
     const days = Math.floor(date / (1000 * 60 * 60 * 24));
 
@@ -79,6 +84,10 @@ function ClassicGame() {
       {!hasWon && <LegendsBar onLegendSubmit={legendSubmit} />}
       {hasWon && <div className="win">You won!</div>}
       {legendsGrid.length > 0 && <ClassicGrid legendsGrid={legendsGrid} />}
+      <div className="precedent-legend">
+        Yesterday's legend was : <span className="yesterday-name">{yesterdayLegend.legend}</span>
+      </div>
+      {hasWon && <Countdown />}
     </div>
   );
 }

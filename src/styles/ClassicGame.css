@@ -4,3 +4,14 @@
     font-family: 'Apex Black';
     margin: 30px;
 }
+
+.precedent-legend {
+    color: #2E2526;
+    font-size: 1.8dvh;
+    font-family: 'Apex Medium';
+    margin: 30px;
+}
+
+.yesterday-name {
+    font-family: 'Apex Black';
+}

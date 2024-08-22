@@ -1,0 +1,25 @@
+.game-mode {
+    background-color: #2E2526;
+    border: 0.5vh solid #A13439;
+    height: 10vh;
+    width: 17vh;
+    font-size: 4dvh;
+    font-family: 'Apex Black';
+    color: #A13439;
+    margin: 10vh;
+    border-radius: 2vh;
+}
+
+.game-mode:hover {
+    background-color: #A13439;
+    color: #2E2526;
+}
+
+a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

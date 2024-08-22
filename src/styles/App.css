@@ -29,9 +29,19 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  color: white;
+  p {
+    margin: 1vh;
+  }
+}
+
+.footer-name {
   font-size: 2dvh;
   font-family: 'Apex Medium';
-  color: white;
+}
+
+.footer-affiliation {
+  font-size: 1.5dvh;
 }
 
 /*

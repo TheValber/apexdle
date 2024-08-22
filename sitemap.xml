@@ -1,9 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+   <!-- Home Page -->
    <url>
       <loc>https://thevalber.github.io/apexdle/</loc>
-      <lastmod>2024-08-20</lastmod>
+      <lastmod>2024-08-22</lastmod>
       <changefreq>daily</changefreq>
       <priority>1.0</priority>
+   </url>
+
+   <!-- Classic Page -->
+   <url>
+      <loc>https://thevalber.github.io/apexdle/classic</loc>
+      <lastmod>2024-08-22</lastmod>
+      <changefreq>daily</changefreq>
+      <priority>0.8</priority>
    </url>
 </urlset>

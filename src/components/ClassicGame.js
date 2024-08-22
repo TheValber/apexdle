@@ -4,48 +4,13 @@ import LegendsBar from "./LegendsBar";
 import { legends } from "../data/Legends";
 import "../styles/ClassicGame.css";
 import Countdown from "./Countdown";
+import { getRandomLegend } from "../utils/RandomGenerator";
 
 function ClassicGame() {
   const [legendsGrid, setLegendsGrid] = useState([]);
   const guessedLegend = getRandomLegend();
   const yesterdayLegend = getRandomLegend(true);
   const [hasWon, setHasWon] = useState(false);
-
-  function seededShuffle(baseArray, seed) {
-    let array = baseArray.slice();
-    let currentIndex = array.length, temporaryValue, randomIndex;
-  
-    function random() {
-      const x = Math.sin(seed++) * 10000;
-      return x - Math.floor(x);
-    }
-  
-    while (0 !== currentIndex) {
-      randomIndex = Math.floor(random() * currentIndex);
-      currentIndex -= 1;
-  
-      temporaryValue = array[currentIndex];
-      array[currentIndex] = array[randomIndex];
-      array[randomIndex] = temporaryValue;
-    }
-  
-    return array;
-  }
-
-  function getRandomLegend(yesterday = false) {
-    let fullDate  = new Date();
-    if (yesterday) {
-      fullDate.setDate(fullDate.getDate() - 1);
-    }
-    const date = fullDate.getTime();
-    const days = Math.floor(date / (1000 * 60 * 60 * 24));
-
-    const seed = Math.floor(days / 26)
-    const index = days % 26
-
-    const shuffledLegends = seededShuffle(legends, seed);
-    return shuffledLegends[index];
-  }
 
   const legendSubmit = (legend) => {
     const submittedLegend = legends.find((l) => l.legend === legend);

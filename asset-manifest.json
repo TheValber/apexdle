@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/apexdle/static/css/main.35c63760.css",
-    "main.js": "/apexdle/static/js/main.9b0934a8.js",
+    "main.css": "/apexdle/static/css/main.94621ccb.css",
+    "main.js": "/apexdle/static/js/main.129bd798.js",
     "static/media/Apex-Black.ttf": "/apexdle/static/media/Apex-Black.f68e93d9989d8b4c8815.ttf",
     "static/media/Apex-Medium.ttf": "/apexdle/static/media/Apex-Medium.9eabf3bad65c2e0d19d7.ttf",
     "static/media/Bloodhound.png": "/apexdle/static/media/Bloodhound.910493b9b2d4f6209120.png",
@@ -31,11 +31,11 @@
     "static/media/Fuse.png": "/apexdle/static/media/Fuse.95577b9e2e6381a867d5.png",
     "static/media/Seer.png": "/apexdle/static/media/Seer.c326cade1320ccf7ed6f.png",
     "index.html": "/apexdle/index.html",
-    "main.35c63760.css.map": "/apexdle/static/css/main.35c63760.css.map",
-    "main.9b0934a8.js.map": "/apexdle/static/js/main.9b0934a8.js.map"
+    "main.94621ccb.css.map": "/apexdle/static/css/main.94621ccb.css.map",
+    "main.129bd798.js.map": "/apexdle/static/js/main.129bd798.js.map"
   },
   "entrypoints": [
-    "static/css/main.35c63760.css",
-    "static/js/main.9b0934a8.js"
+    "static/css/main.94621ccb.css",
+    "static/js/main.129bd798.js"
   ]
 }
